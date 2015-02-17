@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="todo" class="form-control">
+          <div class="form-group">
+            <label for="task">Enter a task:</label>
+            <input id="task" type="text" name="task">
+            <label for="date">Enter a due date:</label>
+            <input id="date" type="text" name="date">
+          </div>
+          <button class = "btn btn-success" type="submit">Add</button>
+
+      </form>
+    </div>
+    <div class="show-results">
+      <p>Tasks:</p>
+      <form id ="current">
+        <ul>
+        <span class = "needs-doing"></span>
+        </ul>
+    </div>
+    <div class="completed">
+      <p>Completed Tasks:</p>
+      <ul>
+        <span class="completed-tasks"></span>
+      </ul>
+    </div>
+
+    <div class="show-details">
+      <p>Task Detail:</p>
+        <p>Task: <span class="task"></span></p>
+        <p>Due Date: <span class="date"></span></p>
+    </div>
+  </body>
+</html>
